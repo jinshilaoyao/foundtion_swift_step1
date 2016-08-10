@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     struct CalculateManager {
         var result = 0
         
-        mutating func calculate(closure:(Int) -> (Int)) ->CalculateManager {
+        mutating func calculate(_ closure:(Int) -> (Int)) ->CalculateManager {
             result = closure(result)
             return self
         }
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 //        someClosure("call closure")
         
 //        run1("call closure one").run2("call closure two")
